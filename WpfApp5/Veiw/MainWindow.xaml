@@ -1,0 +1,53 @@
+﻿<Window x:Class="WpfApp5.Veiw.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp5.Veiw"
+        mc:Ignorable="d"
+        Title="Shop" Height="450" Width="800"  Icon="/Image/icons8-shopping-mall-48.png" >
+    <Grid Background="DarkOrange">
+
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="10*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+
+            <Button 
+                Name="btnShoping"
+                Width="40" 
+                Height="30" 
+                Click="btnShoping_Click"
+                ToolTip="Shop">
+                <Button.Background>
+                    <ImageBrush ImageSource="/Image/185100_caddie_shop_shopping_icon.png" Stretch="Uniform"/>
+                </Button.Background>
+            </Button>
+
+            <TextBlock Grid.Column="1" 
+                       HorizontalAlignment="Center"
+                       VerticalAlignment="Center"
+                       Text="Shop" ></TextBlock>
+        </Grid>
+
+        <Grid Grid.Row="1" Background="White" >
+            <ScrollViewer 
+                    x:Name="MyScrollViewer" 
+                    Margin="20 0 0 20" 
+                    HorizontalScrollBarVisibility="Auto" 
+                    VerticalScrollBarVisibility="Hidden">
+                <WrapPanel Name="pnlProducts"></WrapPanel>
+            </ScrollViewer>
+        </Grid>
+        
+    </Grid>
+</Window>

@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="User_Control\8664909_heart_like_icon.png" />
+    <None Remove="User_Control\8666683_edit_2_icon.png" />
+    <None Remove="Veiw\185100_caddie_shop_shopping_icon.png" />
+    <None Remove="Veiw\2931154_bookmark_favorite_rank_rating_star_icon.png" />
+    <None Remove="Veiw\icons8-shopping-mall-48.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Image\ImageNotProduct.jpg" />
+    <Resource Include="Image\8666683_edit_2_icon.png" />
+    <Resource Include="Image\8664909_heart_like_icon.png" />
+    <Resource Include="Image\185100_caddie_shop_shopping_icon.png" />
+    <Resource Include="Image\2931154_bookmark_favorite_rank_rating_star_icon.png" />
+    <Resource Include="Image\icons8-shopping-mall-48.png" />
+  </ItemGroup>
+
+</Project>
